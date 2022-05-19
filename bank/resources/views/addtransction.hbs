@@ -1,0 +1,23 @@
+{{>header}}
+{{>navbar}}
+<section class="container my-4">
+    <h3 class="text-center text-primary my-3">Add New transaction</h3>
+    <form action="" method="POST">
+        <div class="mb-3">
+            <input class="form-control"  value={{user.id}} readonly>
+        </div>
+        <div class="mb-3">
+            <input name="value" class="form-control" placeholder="Value" >
+        </div>
+       <div class="mb-3">
+        <select name="type"  class="form-control" id="type">
+        <option selected> select your type</option>
+        <option value="deposit">deposit </option>
+        <option value="Withdraw ">Withdraw</option>
+       </select>
+        </div>
+      <div class="mb-3">
+            <button class="btn btn-primary">Add transction</button>
+        </div>
+    </form>
+</section>
